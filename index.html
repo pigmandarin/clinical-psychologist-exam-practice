@@ -5085,7 +5085,7 @@ function matchFormulaBranch(it,A,inQ){
   const norm=s=>strip(String(s).replace(/0\.(\d+)/g,".$1"));
   return it.branches.some(branch=>branch.every(part=>{
     const f=norm(part);
-    return f.length>=2 && !(inQ&&inQ(f)) && A.includes(f);
+    return f.length>=2 && !(inQ&&inQ(f)) && (A.includes(f) || A.includes(strip(part)));
   }));
 }
 function matchPool(it,A,inQ){
