@@ -241,15 +241,8 @@ window.QUESTIONS = [{ level:1, y:2025, n:1, verified:true,
 
 { level:1, y:2025, n:4, verified:true,
   q:"로샤검사의 특수지표 중 우울지표(DEPI) 6가지를 쓰시오.",
-  keypoints:[
-    {label:"FV+VF+V>0 이거나 FD>2", all:["FV+VF+V>0","FD>2"]},
-    {label:"Col-Shd Blends>0 이거나 S>2", all:["Col-Shd Blends>0","S>2"]},
-    {label:"(3r+(2))/R>.44 이고 Fr+rF=0 또는 (3r+(2))/R<.33", all:["(3r+(2))/R>.44","Fr+rF=0","(3r+(2))/R<.33"]},
-    {label:"Afr<.46 이거나 Blends<4", all:["Afr<.46","Blends<4"]},
-    {label:"Sum Shading>FM+m 이거나 SumC'>2", all:["Sum Shading>FM+m","SumC'>2"]},
-    {label:"MOR>2 이거나 2AB+Art+Ay>3", all:["MOR>2","2AB+Art+Ay>3"]}
-  ],
-  explain:"DEPI(Depression Index)는 Exner 종합체계의 특수지표로, 단일 변인이 아니라 정서·인지 변인들의 군집으로 우울 관련 취약성을 탐지한다(전체 준거 중 5개 이상 충족 시 유의). 각 준거는 무채색·음영·형태차원 결정인(FV·VF·V·FD, Sum Shading, SumC')의 증가, 정서 회피(낮은 Afr)나 정서 조절 곤란(Col-Shd Blends, S), 심리적 단순화(낮은 Blends), 낮은 자기가치감(자기중심성 지표 3r+(2)/R 저하와 반사반응 부재), 병적·부정적 사고 내용(MOR, 지식화 지표 2AB+Art+Ay)을 포착한다. 여러 지표가 우울 방향으로 수렴하는지를 보는 것이 핵심이며, 개정판 R-PAS에서는 동일 지표를 그대로 쓰지 않는다는 점도 유의한다." },
+  keypoints:[{label:"DEPI 7개 준거 중 6가지",min:6,pool:[{"t":"FV+VF+V>0 또는 FD>2","branches":[["FV+VF+V>0"],["FD>2"]]},{"t":"Col-Shd Blends>0 또는 S>2","branches":[["Col-Shd Blends>0"],["S>2"]]},{"t":"(3r+(2))/R>.44 이고 Fr+rF=0 또는 (3r+(2))/R<.33","branches":[["(3r+(2))/R>.44","Fr+rF=0"],["(3r+(2))/R<.33"]]},{"t":"Afr<.46 또는 Blends<4","branches":[["Afr<.46"],["Blends<4"]]},{"t":"Sum Shading>FM+m 또는 SumC'>2","branches":[["Sum Shading>FM+m"],["SumC'>2"]]},{"t":"MOR>2 또는 2AB+Art+Ay>3","branches":[["MOR>2"],["2AB+Art+Ay>3"]]},{"t":"COP<2 또는 고립지표>.24","branches":[["COP<2"],["Isol>.24"],["Isolation Index>.24"]]}]}],
+  explain:"DEPI(Depression Index)는 Exner 종합체계의 특수지표로, 단일 변인이 아니라 정서·인지 변인들의 군집으로 우울 관련 취약성을 탐지한다(7개 준거 중 5개 이상 충족 시 양성으로 평가하되 이 지표만으로 우울장애를 진단할 수 없음). 각 준거는 무채색·음영·형태차원 결정인(FV·VF·V·FD, Sum Shading, SumC')의 증가, 정서 회피(낮은 Afr)나 정서 조절 곤란(Col-Shd Blends, S), 심리적 단순화(낮은 Blends), 낮은 자기가치감(자기중심성 지표 3r+(2)/R 저하와 반사반응 부재), 병적·부정적 사고 내용(MOR, 지식화 지표 2AB+Art+Ay)을 포착한다. 여러 지표가 우울 방향으로 수렴하는지를 보는 것이 핵심이며, 개정판 R-PAS에서는 동일 지표를 그대로 쓰지 않는다는 점도 유의한다." },
 
 { level:1, y:2025, n:5, verified:true,
   q:"로르샤하 검사에서 반응 응답으로 알 수 없을 때 추가로 확인해야 하는 것 3가지를 쓰시오.",
@@ -1381,15 +1374,8 @@ window.QUESTIONS = [{ level:1, y:2025, n:1, verified:true,
 
 { level:1, y:2020, n:5, verified:true,
   q:"로르샤하 검사의 특수지표 중 우울지표(DEPI) 6가지를 쓰시오.",
-  keypoints:[
-    {label:"FV+VF+V>0 이거나 FD>2", all:["FV+VF+V>0","FD>2"]},
-    {label:"Col-Shd Blends>0 이거나 S>2", all:["Col-Shd Blends>0","S>2"]},
-    {label:"(3r+(2))/R>.44 이고 Fr+rF=0 또는 (3r+(2))/R<.33", all:["(3r+(2))/R>.44","Fr+rF=0","(3r+(2))/R<.33"]},
-    {label:"Afr<.46 이거나 Blends<4", all:["Afr<.46","Blends<4"]},
-    {label:"Sum Shading>FM+m 이거나 SumC'>2", all:["Sum Shading>FM+m","SumC'>2"]},
-    {label:"MOR>2 이거나 2AB+Art+Ay>3", all:["MOR>2","2AB+Art+Ay>3"]}
-  ],
-  explain:"DEPI(Depression Index)는 Exner 종합체계의 특수지표로, 단일 변인이 아니라 정서·인지 변인들의 군집으로 우울 관련 취약성을 탐지한다(전체 준거 중 5개 이상 충족 시 유의). 각 준거는 무채색·음영·형태차원 결정인의 증가, 정서 회피(낮은 Afr)나 정서 조절 곤란(Col-Shd Blends, S), 낮은 자기가치감(자기중심성 지표 저하와 반사반응 부재), 병적·부정적 사고 내용(MOR, 지식화 지표)을 포착한다. 여러 지표가 우울 방향으로 수렴하는지를 본다." },
+  keypoints:[{label:"DEPI 7개 준거 중 6가지",min:6,pool:[{"t":"FV+VF+V>0 또는 FD>2","branches":[["FV+VF+V>0"],["FD>2"]]},{"t":"Col-Shd Blends>0 또는 S>2","branches":[["Col-Shd Blends>0"],["S>2"]]},{"t":"(3r+(2))/R>.44 이고 Fr+rF=0 또는 (3r+(2))/R<.33","branches":[["(3r+(2))/R>.44","Fr+rF=0"],["(3r+(2))/R<.33"]]},{"t":"Afr<.46 또는 Blends<4","branches":[["Afr<.46"],["Blends<4"]]},{"t":"Sum Shading>FM+m 또는 SumC'>2","branches":[["Sum Shading>FM+m"],["SumC'>2"]]},{"t":"MOR>2 또는 2AB+Art+Ay>3","branches":[["MOR>2"],["2AB+Art+Ay>3"]]},{"t":"COP<2 또는 고립지표>.24","branches":[["COP<2"],["Isol>.24"],["Isolation Index>.24"]]}]}],
+  explain:"DEPI(Depression Index)는 Exner 종합체계의 특수지표로, 단일 변인이 아니라 정서·인지 변인들의 군집으로 우울 관련 취약성을 탐지한다(7개 준거 중 5개 이상 충족 시 양성으로 평가하되 이 지표만으로 우울장애를 진단할 수 없음). 각 준거는 무채색·음영·형태차원 결정인의 증가, 정서 회피(낮은 Afr)나 정서 조절 곤란(Col-Shd Blends, S), 낮은 자기가치감(자기중심성 지표 저하와 반사반응 부재), 병적·부정적 사고 내용(MOR, 지식화 지표)을 포착한다. 여러 지표가 우울 방향으로 수렴하는지를 본다." },
 
 { level:1, y:2020, n:6, verified:true,
   q:"로르샤하 검사 결과를 해석할 때, 특히 수검자가 아동인 경우 해석 과정에서 고려해야 할 사항 4가지를 기술하시오.",
@@ -2188,15 +2174,8 @@ window.QUESTIONS = [{ level:1, y:2025, n:1, verified:true,
 
 { level:1, y:2016, n:1, verified:true,
   q:"로르샤하 검사의 특수지표 중 우울지표(DEPI)를 5가지 쓰시오.",
-  keypoints:[{label:"우울지표(DEPI) 준거 5가지", min:5, pool:[
-    {t:"FV+VF+V>0 이거나 FD>2", all:["FV+VF+V>0","FD>2"]},
-    {t:"Col-Shd Blends>0 이거나 S>2", all:["Col-Shd Blends>0","S>2"]},
-    {t:"(3r+(2))/R>.44 이고 Fr+rF=0 또는 (3r+(2))/R<.33", all:["(3r+(2))/R>.44","Fr+rF=0","(3r+(2))/R<.33"]},
-    {t:"Afr<.46 이거나 Blends<4", all:["Afr<.46","Blends<4"]},
-    {t:"Sum Shading>FM+m 이거나 SumC'>2", all:["Sum Shading>FM+m","SumC'>2"]},
-    {t:"MOR>2 이거나 2AB+Art+Ay>3", all:["MOR>2","2AB+Art+Ay>3"]}
-  ]}],
-  explain:"DEPI(우울지표)는 정서·인지 변인들의 군집으로 우울 취약성을 탐지하는 특수지표다(전체 준거 중 5개 이상 충족 시 유의). 각 준거는 무채색·음영·형태차원 결정인의 증가, 정서 회피(낮은 Afr)나 정서 조절 곤란(Col-Shd Blends, S), 낮은 자기가치감(자기중심성 지표 저하와 반사반응 부재), 병적·부정적 사고 내용(MOR, 지식화 지표)을 포착한다. '이거나/이고'로 묶인 각 준거는 두 조건을 하나의 완결된 조건으로 함께 기술해야 한다." },
+  keypoints:[{label:"DEPI 7개 준거 중 5가지",min:5,pool:[{"t":"FV+VF+V>0 또는 FD>2","branches":[["FV+VF+V>0"],["FD>2"]]},{"t":"Col-Shd Blends>0 또는 S>2","branches":[["Col-Shd Blends>0"],["S>2"]]},{"t":"(3r+(2))/R>.44 이고 Fr+rF=0 또는 (3r+(2))/R<.33","branches":[["(3r+(2))/R>.44","Fr+rF=0"],["(3r+(2))/R<.33"]]},{"t":"Afr<.46 또는 Blends<4","branches":[["Afr<.46"],["Blends<4"]]},{"t":"Sum Shading>FM+m 또는 SumC'>2","branches":[["Sum Shading>FM+m"],["SumC'>2"]]},{"t":"MOR>2 또는 2AB+Art+Ay>3","branches":[["MOR>2"],["2AB+Art+Ay>3"]]},{"t":"COP<2 또는 고립지표>.24","branches":[["COP<2"],["Isol>.24"],["Isolation Index>.24"]]}]}],
+  explain:"DEPI(우울지표)는 정서·인지 변인들의 군집으로 우울 취약성을 탐지하는 특수지표다(7개 준거 중 5개 이상 충족 시 양성으로 평가하되 이 지표만으로 우울장애를 진단할 수 없음). 각 준거는 무채색·음영·형태차원 결정인의 증가, 정서 회피(낮은 Afr)나 정서 조절 곤란(Col-Shd Blends, S), 낮은 자기가치감(자기중심성 지표 저하와 반사반응 부재), 병적·부정적 사고 내용(MOR, 지식화 지표)을 포착한다. '이거나/이고'로 묶인 각 준거는 두 조건을 하나의 완결된 조건으로 함께 기술해야 한다." },
 
 { level:1, y:2016, n:2, verified:true,
   q:"로르샤하 검사에서 채점된 점수가 Fr=2, rF=3, (2)=5, R=20일 때 자아중심성 지표를 계산하시오.",
@@ -3164,15 +3143,8 @@ window.QUESTIONS = [{ level:1, y:2025, n:1, verified:true,
 
 { level:1, y:2012, n:10, verified:true,
   q:"로르샤하 검사의 특수지표 중 우울지표(DEPI)를 5가지 쓰시오.",
-  keypoints:[{label:"우울지표(DEPI) 준거 5가지", min:5, pool:[
-    {t:"FV+VF+V>0 이거나 FD>2", all:["FV+VF+V>0","FD>2"]},
-    {t:"Col-Shd Blends>0 이거나 S>2", all:["Col-Shd Blends>0","S>2"]},
-    {t:"(3r+(2))/R>.44 이고 Fr+rF=0 또는 (3r+(2))/R<.33", all:["(3r+(2))/R>.44","Fr+rF=0","(3r+(2))/R<.33"]},
-    {t:"Afr<.46 이거나 Blends<4", all:["Afr<.46","Blends<4"]},
-    {t:"Sum Shading>FM+m 이거나 SumC'>2", all:["Sum Shading>FM+m","SumC'>2"]},
-    {t:"MOR>2 이거나 2AB+Art+Ay>3", all:["MOR>2","2AB+Art+Ay>3"]}
-  ]}],
-  explain:"DEPI(우울지표)는 정서·인지 변인들의 군집으로 우울 취약성을 탐지하는 특수지표다(전체 준거 중 5개 이상 충족 시 유의). 각 준거는 무채색·음영·형태차원 결정인의 증가, 정서 회피(낮은 Afr)나 정서 조절 곤란(Col-Shd Blends, S), 낮은 자기가치감(자기중심성 지표 저하와 반사반응 부재), 병적·부정적 사고 내용(MOR, 지식화 지표)을 포착한다. '이거나/이고'로 묶인 각 준거는 두 조건을 함께 완결된 조건으로 기술해야 한다." },
+  keypoints:[{label:"DEPI 7개 준거 중 5가지",min:5,pool:[{"t":"FV+VF+V>0 또는 FD>2","branches":[["FV+VF+V>0"],["FD>2"]]},{"t":"Col-Shd Blends>0 또는 S>2","branches":[["Col-Shd Blends>0"],["S>2"]]},{"t":"(3r+(2))/R>.44 이고 Fr+rF=0 또는 (3r+(2))/R<.33","branches":[["(3r+(2))/R>.44","Fr+rF=0"],["(3r+(2))/R<.33"]]},{"t":"Afr<.46 또는 Blends<4","branches":[["Afr<.46"],["Blends<4"]]},{"t":"Sum Shading>FM+m 또는 SumC'>2","branches":[["Sum Shading>FM+m"],["SumC'>2"]]},{"t":"MOR>2 또는 2AB+Art+Ay>3","branches":[["MOR>2"],["2AB+Art+Ay>3"]]},{"t":"COP<2 또는 고립지표>.24","branches":[["COP<2"],["Isol>.24"],["Isolation Index>.24"]]}]}],
+  explain:"DEPI(우울지표)는 정서·인지 변인들의 군집으로 우울 취약성을 탐지하는 특수지표다(7개 준거 중 5개 이상 충족 시 양성으로 평가하되 이 지표만으로 우울장애를 진단할 수 없음). 각 준거는 무채색·음영·형태차원 결정인의 증가, 정서 회피(낮은 Afr)나 정서 조절 곤란(Col-Shd Blends, S), 낮은 자기가치감(자기중심성 지표 저하와 반사반응 부재), 병적·부정적 사고 내용(MOR, 지식화 지표)을 포착한다. '이거나/이고'로 묶인 각 준거는 두 조건을 함께 완결된 조건으로 기술해야 한다." },
 
 { level:1, y:2012, n:11, verified:true,
   q:"웩슬러 지능검사에서 바꿔쓰기(Coding) 소검사 점수에 영향을 미칠 수 있는 요인 5가지를 쓰시오.",
@@ -5109,7 +5081,15 @@ function kpTermsets(kp){ // 필수요소별 term 배열 (단일 항목은 요소
   return parts.map(p=>termsFor(p));
 }
 function poolLabel(it){return typeof it==="string"?it:(it.t||it.label||"");}
-function matchPool(it,A,inQ){ // 개수형 항목의 개별 요소 매칭(문자열, {t,ac}, 또는 {t,all})
+function matchFormulaBranch(it,A,inQ){
+  const norm=s=>strip(String(s).replace(/0\.(\d+)/g,".$1"));
+  return it.branches.some(branch=>branch.every(part=>{
+    const f=norm(part);
+    return f.length>=2 && !(inQ&&inQ(f)) && A.includes(f);
+  }));
+}
+function matchPool(it,A,inQ){
+  if(it&&it.branches) return matchFormulaBranch(it,A,inQ); // 개수형 항목의 개별 요소 매칭(문자열, {t,ac}, 또는 {t,all})
   const t=poolLabel(it);
   if(it&&typeof it==="object"&&it.all){        // 복합 요소: 하위식이 모두 있어야 인정
     return it.all.every(part=>{ const f=strip(part); return f.length>=2 && !(inQ&&inQ(f)) && A.includes(f); });
